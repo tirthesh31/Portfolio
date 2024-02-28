@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow: hidden;
+}
+body{
+    background-color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #b6a114;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+}
+.navigation{
+    margin-top: 5%;
+    margin-left: 2.5%;
+    border-radius: 15%;
+    border: 2px solid #b6a114;
+    width: 25%;
+    align-items: center;
+    height: 85vh;
+}
+.navigation img{
+    margin-top: 2.5%;
+    margin-left: 25%;
+    height: 30%;
+    width: 50%;
+}
+.navigation nav {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    font-size: 1.2rem;
+    width: 100%;
+    padding-bottom: 2.5%;
+    padding-top: 2.5%;
+    text-align: center;
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links block-level elements */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+a:hover {
+    background-color: #a08d10; /* Darken the background color on hover */
+    color: #000;
+}
+
+/* Optional: Active link styling */
+a.active {
+    background-color: #007bff; /* Active link background color */
+}
+
+.content{
+    margin-top: 5%;
+    margin-left: 1.5%;
+    width: 70%;
+    align-items: center;
+}
+.content .home{
+    padding: 2.5%;
+    display: flex;
+    align-content: space-around;
+}
+.content .home .introduction{
+    margin-top: 10%;
+}
+
+.content .home .introduction #intro{
+    font-size: 1.6rem;
+}
+.content .home .introduction .anim-typewriter{
+    font-size: 3.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(5),
+                blink 4s step-end infinite normal;
+    border-right: 5px solid #b6a114;
+    letter-spacing: .50%;
+}
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
+
+@keyframes blink {
+    50%{border-color: transparent;}
+}
