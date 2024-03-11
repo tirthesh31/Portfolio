@@ -1,11 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-html{
+
+html {
     overflow: hidden;
 }
-body{
+
+body {
     background-color: #000;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
@@ -14,9 +17,9 @@ body{
     height: 100%;
     width: 100%;
     display: flex;
-    align-content: space-between;
 }
-.navigation{
+
+.navigation {
     margin-top: 5%;
     margin-left: 2.5%;
     border-radius: 15%;
@@ -24,13 +27,16 @@ body{
     width: 25%;
     align-items: center;
     height: 85vh;
+    position: fixed;
 }
-.navigation img{
+
+.navigation img {
     margin-top: 2.5%;
     margin-left: 25%;
     height: 30%;
     width: 50%;
 }
+
 .navigation nav {
     display: flex;
     flex-direction: column;
@@ -42,103 +48,279 @@ a {
     padding-bottom: 2.5%;
     padding-top: 2.5%;
     text-align: center;
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    display: block; /* Make links block-level elements */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    color: white;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
 }
 
 a:hover {
-    background-color: #a08d10; /* Darken the background color on hover */
+    background-color: #a08d10;
     color: #000;
 }
 
-/* Optional: Active link styling */
-a.active {
-    background-color: #007bff; /* Active link background color */
+a:active {
+    background-color: #a08d10;
+    color: #000;
 }
 
-.content{
+.content {
     margin-top: 5%;
-    margin-left: 1.5%;
+    margin-left: 26.5%;
     width: 70%;
-    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow-y: auto;
 }
-.content .home{
-    height: 92rem;
+
+.content .home {
+    height: 100%;
     padding: 2.5%;
     display: flex;
-    align-content: space-around;
-}
-.content .home .introduction{
-    margin-top: 10%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.content .home .introduction #intro{
+.content .home .introduction #intro {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
 }
-.content .home .introduction .anim-typewriter{
+
+.content .home .introduction .anim-typewriter {
     font-size: 4.2rem;
     white-space: nowrap;
     font-weight: 500;
     overflow: hidden;
-    animation: typewriter 20s steps(14) infinite,
-                blink .8s infinite normal;
+    animation: typewriter 20s steps(14) infinite, blink .8s infinite normal;
     border-right: 5px solid #b6a114;
-    letter-spacing: .50%;
 }
-.content .home .introduction #subIntro{
+
+.content .home .introduction #subIntro {
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+    text-align: center;
+    margin-top: 2.5%;
 }
+
 @keyframes typewriter {
-    10%,15%,30%,35%,50%,55%,75%,70%,90%,95% {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    75%,
+    70%,
+    90%,
+    95% {
         width: 0;
+        margin-left: 25%;
     }
 
-    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
         width: calc(55% - 5px);
+        margin-left: 25%;
     }
 }
 
 @keyframes blink {
-    50%{border-color: transparent;}
+    50% {
+        border-color: transparent;
+    }
 }
-/*here is the div section for skill*/
-.skill {
-    width: 100px;
-    height: 55px;
-    background: #fc5e5e;
+
+.about {
+    margin-left: 2.5%;
+    height: 100%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .strength,
+.about .goals {
+    border: 2px solid #b6a114;
+    border-radius: 5px;
+    margin-top: 2.5%;
+    padding: 1%;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+}
+
+.about .strength h2,
+.about .goals h2 {
+    text-align: center;
+}
+
+.about .strength .strengthImage img,
+.about .goals .goalImage img {
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+}
+
+.about .strengthContent ul li,
+.about .goalContent ul li {
+    padding: 1%;
+    color: #fff;
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.service {
+    height: 100%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service .iot,
+.service .website,
+.service .mobile {
+    border: 2px solid #b6a114;
+    border-radius: 5px;
+    margin-top: 2.5%;
+    padding: 1%;
+    width: 95%;
+    max-width: 1100px;
+    display: flex;
+    align-items: center;
+}
+
+.service .iot h2,
+.service .mobile h2,
+.service .website h2 {
+    text-align: center;
+}
+
+.service .iot .iotImage img,
+.service .mobile .mobileImage img,
+.service .website .websiteImage img {
+    display: block;
+    margin: 0 auto;
+    width: 8rem;
+    height: 8rem;
+}
+
+.service .mobileContent ul li,
+.service .websiteContent ul li,
+.service .iotContent ul li {
+    padding: 1%;
+    color: #fff;
+    list-style-type: none;
+    font-size: 1.1rem;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/* Skill block */
+.skills {
+
+    height: 100%;
+    padding: 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon {
+    width: 10rem;
+    height: 7rem;
+    background-color: #b6a114;
     position: relative;
-    margin: 10px auto;
+    margin: 1.5rem;
 }
 
-.skill:before {
-    content: "";
-    width: 0;
-    height: 0;
+.hexagon:before,
+.hexagon:after {
+    content: '';
     position: absolute;
-    top: -25px;
-    left: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-bottom: 25px solid #fc5e5e;
+    width: 0;
+    border-left: 5rem solid transparent;
+    border-right: 5rem solid transparent;
 }
 
-.skill:after {
-    content: "";
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 28.87px solid #b6a114;
+}
+
+.hexagon:after {
+    top: 100%;
     width: 0;
-    height: 0;
+    border-top: 28.87px solid #b6a114;
+}
+
+span {
     position: absolute;
-    bottom: -25px;
-    left: 0;
-    border-left: 50px solid transparent;
-    border-right: 50px solid transparent;
-    border-top: 25px solid #fc5e5e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.education {
+    height: 100%;
+    padding: 2.5%;
+}
+
+.education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.education-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.education-details {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
