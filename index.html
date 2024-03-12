@@ -23,7 +23,6 @@
             <a href="#education">Education</a>
             <a href="#experience">Experience</a>
             <a href="#work">Work</a>
-            <a href="#blog">Blog</a>
             <a href="#contact">Contact</a>
         </nav>
     </div>
@@ -136,30 +135,99 @@
             </div>
         </div>        
         <div class="education" id="education">
-            <h2>Education</h2>
             <div class="education-item">
-                <img src="images/college-icon.png" alt="college icon" class="icon">
+                <img src="images/logos/college.png" alt="university icon" class="icon">
+                <div class="education-details">
+                    <h3>Post Graduate Diploma</h3>
+                    <p>Fanshawe College</p>
+                    <p>London, ON, Canada</p>
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <p>Mobile Application Development</p>
+                    <p>Current</p>
+                    <p>I am learning many new things here.</p>
+                </div>
+            </div>
+            <div class="education-item">
+                <img src="images/logos/university.png" alt="college icon" class="icon">
                 <div class="education-details">
                     <h3>BSc in Information Technology</h3>
                     <p>Babu Madhav Institute of Information Technology, Uka Tarsadia University</p>
                     <p>Bardoli, Surat, Gujarat, India</p>
                     <p>CGPA: 8.95</p>
+                    <p>⭐️⭐️⭐️⭐️</p>
+                    <p>College and University Life</p>
+                    <p>My university life was good. I learned many things like how to talk with professors, and my coding life also improved a lot. I took part in many competitions, shared my ideas, and did very well. This boosted my confidence a lot. Because in my school life, I was just an average student, but as soon as I became a student of UTU, I changed a lot.</p>
                 </div>
             </div>
-            <div class="education-item">
-                <img src="images/university-icon.png" alt="university icon" class="icon">
-                <div class="education-details">
-                    <h3>Post Graduate Diploma</h3>
-                    <p>Fanshawe College</p>
-                    <p>London, ON, Canada</p>
+        </div>              
+        <div class="experience" id="experience">
+            <div class="experience-item">
+                <img src="images/logos/job.webp" alt="SSM Infotech" class="icon">
+                <div class="experience-details">
+                    <h3>Software Developer</h3>
+                    <p>SSM Infotech</p>
+                    <p>Duration: 6 months</p>
+                    <p>Tasks:</p>
+                    <ul>
+                        <li>Designed and developed software for real-time dashboards of ongoing projects.</li>
+                        <li>Worked as a team member in the software department.</li>
+                        <li>Majorly focused on animation work using JavaScript.</li>
+                    </ul>
+                    <p class="experience-feels">I have 6 months of experience at SSM Infotech, where I was part of the software department. SSM specializes in designing and developing both hardware and software solutions. My primary responsibility was to design software that allows users to create real-time dashboards for projects. This involved working with JavaScript to create dynamic and interactive elements.</p>
+                    <p class="experience-feels">During my time at SSM Infotech, I gained valuable insights into project workflows. I learned how projects are initiated, how work is divided among team members, and how ideas are transformed into tangible products. This experience has not only honed my technical skills but also taught me the importance of collaboration, communication, and adaptability in project management.</p>
                 </div>
             </div>
         </div>        
-        <div class="experience" id="experience"></div>
-        <div class="work" id="work"></div>
-        <div class="blog" id="blog"></div>
-        <div class="contact" id="contact"></div>
+        <div class="work" id="work">
+            <div class="work-row">
+                <div class="work-item project5">
+                    <video controls>
+                        <source src="videos/project5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Hexapod</p>
+                    <p>Duration: 2 months</p>
+                </div>
+                <div class="work-item project4">
+                    <video controls>
+                        <source src="videos/project4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Social Media Application</p>
+                    <p>Duration: 3 months</p>
+                </div>
+                <div class="work-item project2">
+                    <img src="images/logos/project3.jpeg" alt="Project 2">
+                    <p>Plantation Monitoring System</p>
+                    <p>Duration: 5 months</p>
+                </div>
+            
+                <div class="work-item project3">
+                    <img src="images/logos/project6.png" alt="Project 3">
+                    <p>Doctor Suggestion System</p>
+                    <p>Duration: 6 months</p>
+                </div>
+            </div>
+        </div>       
+        <div class="contact" id="contact">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="contact" name="contact" pattern="[0-9]{10}" required>
+                    <small>Enter a 10-digit contact number.</small>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <a class="view-contact-btn" href="myContact.html">View My Contact</a>
+        </div>        
     </div>
-    <script src="script.js"></script>
 </body>
 </html>

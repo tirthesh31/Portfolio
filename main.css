@@ -1,7 +1,7 @@
-* {
+* { 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 html {
@@ -290,37 +290,209 @@ span {
 
 .education {
     height: 100%;
+    width: 100%;
     padding: 2.5%;
-}
-
-.education h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .education-item {
-    display: flex;
-    margin-bottom: 20px;
+    flex-basis: 40%;
+    margin-bottom: 2.5%;
+    border: 2px solid #b6a114;
+    border-radius: 5px;
+    padding: 1rem;
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
+.education-item img {
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 1rem;
 }
 
 .education-details {
-    flex: 1;
+    color: #fff;
 }
 
-@media (max-width: 768px) {
-    .education-item {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .icon {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+.education-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
+
+.education-details p {
+    margin-bottom: 0.5rem;
+}
+
+.education-details p:nth-last-child(1) {
+    font-weight: bold;
+}
+
+.experience {
+    height: 100%;
+    width: 100%;
+    padding: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #b6a114;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2.5%;
+}
+
+.experience-item img {
+    width: 50%;
+    height: auto;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.experience-details {
+    color: #fff;
+}
+
+.experience-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-details p {
+    margin-bottom: 0.5rem;
+}
+
+.experience-details ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+.experience-details {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+}
+.experience-feels{
+    margin-top: .5rem;
+}
+/*work*/
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.project5 { grid-area: project5; }
+.project4 { grid-area: project4; }
+.project3 { grid-area: project3; }
+.project2 { grid-area: project2; }
+.project1 { grid-area: project1; }
+
+.work-row {
+    margin-top: 8%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-areas:
+        'project5 project5 project5 project5 project4 project4'
+        'project5 project5 project5 project5 project4 project4'
+        'project3 project3 project2 project2 project4 project4'
+        'project3 project3 project2 project2 project4 project4';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.work-item {
+    text-align: center;
+    padding: 5px;
+    border: 2px solid #b6a114;
+    border-radius: 5px;
+    width: 90%;
+}
+.work-item video,
+.work-item img {
+    max-width: 100%;
+    height: 85%;
+}
+.work-item p{
+    margin-top: .2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5%;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 70%;
+    margin-bottom: 1rem;
+    border: 3px solid #b6a114;
+    padding: 2rem;
+    border-radius: 5%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #b6a114;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #b6a114;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #b6a114;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #a08d10;
+}
+
+.view-contact-btn {
+    padding: 10px 20px;
+    background-color: #b6a114;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.view-contact-btn:hover {
+    background-color: #a08d10;
+}
+
+
+ 
